@@ -14,9 +14,9 @@ Estos se declaran con la etiqueta <!ELEMENT>.
 
 ### Elementos terminales
 
-* ANY -> Cualquier cosa.
-* EMPTY -> Vacío.
-* #PCDATA -> Texto.
+* ANY → Cualquier cosa.
+* EMPTY → Vacío.
+* #PCDATA → Texto.
 
 ### Elementos no terminales
 
@@ -33,15 +33,15 @@ Estos se declaran con la etiqueta <!ATTLIST>
 
 ### Elementos para los atributos
 
-* ENUM -> Es decir, no se puede poner ningún otro tipo de dato que no sea el introducido.
+* ENUM → Es decir, no se puede poner ningún otro tipo de dato que no sea el introducido.
     * <!ATTLIST asignatura nom (hulio|miguel|anuel)>
     * Solo se podrá poner uno de esos 3 nombres como atributo.
-* CDATA -> Define que lo que se guarda es una string.
-* ID -> Para definir como identificador un atributo.
-* IDREF -> Hace referencia a un id que se llame igual.
+* CDATA → Define que lo que se guarda es una string.
+* ID → Para definir como identificador un atributo.
+* IDREF → Hace referencia a un id que se llame igual.
     * <elemento nombre="hola"> (nombre id)
     * <elemento panceta="hola"> (panceta idref)
-* NMTOKEN -> Solamente le podemos pasar una única palabra.
-* #REQUIRED -> Obliga que el campo sea obligatorio.
-* #IMPLIED -> Define que el atributo es opcional.
-* #FIXED -> Define que no puede variar.
+* NMTOKEN → Solamente le podemos pasar una única palabra.
+* #REQUIRED → Obliga que el campo sea obligatorio.
+* #IMPLIED → Define que el atributo es opcional.
+* #FIXED → Define que no puede variar.
