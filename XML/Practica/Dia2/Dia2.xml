@@ -1,0 +1,14 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<1DOCTYPE asignaturas SYSTEM "Dia2.dtd">
+
+<asignaturas>
+    <asignatura nom="LM">
+        <nombre>Lenguaje de marcas</nombre>
+        <horas>4</horas>
+    </asignatura>
+    <asignatura nom="ED">
+        <nombre>Entornos de Desarrollo</nombre>
+        <horas>3</horas>
+    </asignatura>
+</asignaturas>
