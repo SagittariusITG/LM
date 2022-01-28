@@ -8,9 +8,9 @@ DTD (Definiciones de Tipo de Documento) -> Este especifica la estructura del doc
 
 ## Tipos
 
-ANY -> Cualquier cosa
-EMPTY -> Vacío
-#PCDATA -> Texto
+- ANY -> Cualquier cosa
+- EMPTY -> Vacío
+- #PCDATA -> Texto
 
 * (?) al final de un atributo implica que no es un campo requerido.
 * (+) en una etiqueta es que al menos debe haber un campo (en este caso debe hacer al menos una asignatura).
