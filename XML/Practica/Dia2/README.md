@@ -1,6 +1,6 @@
 ## DTD
 
-DTD (Definiciones de Tipo de Documento) -> Este especifica la estructura del documento XML.
+DTD (Definiciones de Tipo de Documento) → Este especifica la estructura del documento XML.
 
 * Este incluye elementos que pueden aparecer.
 * Dónde pueden aparecer.
