@@ -34,7 +34,9 @@ Estos se declaran con la etiqueta <!ATTLIST>
 ### Elementos para los atributos
 
 * ENUM → Es decir, no se puede poner ningún otro tipo de dato que no sea el introducido.
-    * <!ATTLIST asignatura nom (hulio|miguel|anuel)>
+    ```xml
+    <!ATTLIST asignatura nom (hulio|miguel|anuel)>
+    ```
     * Solo se podrá poner uno de esos 3 nombres como atributo.
 * CDATA → Define que lo que se guarda es una string.
 * ID → Para definir como identificador un atributo.
