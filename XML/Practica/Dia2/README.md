@@ -39,8 +39,10 @@ Estos se declaran con la etiqueta <!ATTLIST>
 * CDATA → Define que lo que se guarda es una string.
 * ID → Para definir como identificador un atributo.
 * IDREF → Hace referencia a un id que se llame igual.
+    ```xml
     * <elemento nombre="hola"> (nombre id)
     * <elemento panceta="hola"> (panceta idref)
+    ```
 * NMTOKEN → Solamente le podemos pasar una única palabra.
 * #REQUIRED → Obliga que el campo sea obligatorio.
 * #IMPLIED → Define que el atributo es opcional.
