@@ -9,10 +9,14 @@
             <npag>233</npag>
             <nEdicion>2</nEdicion>
             <idioma>Español</idioma>
-            <editorial>El Barco de Vapor</editorial>
+            <editorial codigo="342">El Barco de Vapor</editorial>
         </infoAdicional>
         <prestamo lector="5497">
-            <fechaPre></fechaPre>
+            <fechaPre>
+                <dia></dia>
+                <mes></mes>
+                <anio></anio>
+            </fechaPre>
             <fechaDev></fechaDev>
         </prestamo>
     </libro>
