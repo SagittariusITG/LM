@@ -5,5 +5,5 @@
 <!ATTLIST cliente codigo NMTOKEN #REQUIRED>
 <!ELEMENT articulos (articulo*)>
 <!ELEMENT articulo (descripcion+, cantidad+, precio*)>
-<!ELEMENT total ()>
+<!ELEMENT total (#PCDATA)>
 <!ATTLIST total valor NMTOKEN #REQUIRED>
