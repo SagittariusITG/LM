@@ -1,0 +1,9 @@
+<!ELEMENT pedido (cliente+, articulos+, total)>
+<!ATTLIST pedido numero NMTOKEN #REQUIRED>
+<!ATTLIST pedido dia NMTOKEN #REQUIRED>
+<!ELEMENT cliente (nombre, apellido+)>
+<!ATTLIST cliente codigo NMTOKEN #REQUIRED>
+<!ELEMENT articulos (articulo*)>
+<!ELEMENT articulo (descripcion+, cantidad+, precio*)>
+<!ELEMENT total ()>
+<!ATTLIST total valor NMTOKEN #REQUIRED>
