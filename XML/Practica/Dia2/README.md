@@ -45,7 +45,7 @@ Estos se declaran con la etiqueta <!ATTLIST>
     <elemento nombre="hola"> (nombre id)
     <elemento panceta="hola"> (panceta idref)
     ```
-* NMTOKEN → Solamente le podemos pasar una única palabra.
+* NMTOKEN → Solamente le podemos pasar una única palabra (Restringe más que CDATA).
 * #REQUIRED → Obliga que el campo sea obligatorio.
 * #IMPLIED → Define que el atributo es opcional.
 * #FIXED → Define que no puede variar.
