@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concesionario SYSTEM "Dia5.dtd">
+
+<concesionario>
+    <coche nBastidor="VF7LC9HXw9Y742817">
+        <grupo nombre="bmwgroup" clave="1"></grupo>
+        <marca grupo="1">
+            <nombreM>BMW</nombreM>
+            <modelo>335i</modelo>
+        </marca>
+        <motor>
+            <cilindrada>3500</cilindrada>
+            <caballos>306</caballos>
+            <combustible>Gasolina</combustible>
+        </motor>
+        <puertas>4</puertas>
+        <extras>Techo solar</extras>
+        <precio moneda="€">49.500</precio>
+    </coche>
+</concesionario>
