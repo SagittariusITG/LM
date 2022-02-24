@@ -1,0 +1,11 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<usuario
+    xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xml"
+    xsi:noNamespaceSchemaLocation="Dia6.xsd"
+    >
+    <nombre>Ismael</nombre>
+    <apellido>Barranco</apellido>
+    <edad>22</edad>
+    <contrasena>soygay</contrasena>
+</usuario>

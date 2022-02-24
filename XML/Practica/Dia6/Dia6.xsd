@@ -1,0 +1,11 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xsd">
+    <xs:element name="usuario" type="Tusuario"/>
+    <xs:complexType name="Tusuario">
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="apellido" type="xs:string"></xs:element>
+        <xs:element name="edad" type="xs:integer"></xs:element>
+        <xs:element name="contrasenia" type="xs:string"></xs:element>
+    </xs:complexType>
+</xs:schema>
