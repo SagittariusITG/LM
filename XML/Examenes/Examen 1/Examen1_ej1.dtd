@@ -1,0 +1,13 @@
+<!ELEMENT zoologico (animal+)>
+
+    <!ELEMENT animal (nombre?, especie, familia, clase, alimentacion*, habitat, salinidad?)>
+    <!ATTLIST animal tipo_animal (NMTOKEN)>
+    <!ATTLIST animal id_alimento (NMTOKEN)>
+
+    <!ELEMENT animal nombre #PCDATA #REQUIRED>
+        <!ELEMENT animal especie #PCDATA #REQUIRED>
+        <!ELEMENT animal familia #PCDATA #REQUIRED>
+        <!ELEMENT animal clase #PCDATA #REQUIRED>
+        <!ELEMENT animal alimentacion (carnivora|omnivora|hervibora) #REQUIRED>
+        <!ELEMENT animal habitat #PCDATA #REQUIRED>
+        <!ELEMENT animal salinidad #PCDATA #REQUIRED>

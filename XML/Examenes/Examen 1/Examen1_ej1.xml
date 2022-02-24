@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE zoologico SYSTEM "Examen1_ej1.dtd">
+
+<zoologico>
+    <animal tipo_animal="334" id_alimento="64234">
+        <nombre>orca</nombre>
+        <especie>ballena</especie>
+        <familia>ballena</familia>
+        <clase>mortal</clase>
+        <alimentacion>Carnivora</alimentacion>
+        <habitat>antartida</habitat>
+        <salinidad>normal</salinidad>
+    </animal>
+    <animal tipo_animal="334" id_alimento="96721">
+        <nombre>foca</nombre>
+        <especie>foca</especie>
+        <familia>focal</familia>
+        <clase>focal</clase>
+        <alimentacion>omnivora</alimentacion>
+        <habitat>antartida</habitat>
+        <salinidad>normal</salinidad>
+    </animal>
+</zoologico>

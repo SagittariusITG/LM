@@ -1,0 +1,14 @@
+<!ELEMENT alimentos (alimento+)>
+
+    <!ELEMENT alimento (InfoAlimento, Consumidor*)>
+
+        <!ELEMENT InfoAlimento (Nombre, Tipo, Cantidad)>
+            <!ELEMENT InfoAlimento Nombre #PCDATA #REQUIRED>
+            <!ELEMENT InfoAlimento Tipo #PCDATA #REQUIRED>
+            <!ELEMENT InfoAlimento Cantidad #PCDATA #REQUIRED>
+
+        <!ELEMENT Consumidor (Especie, CantidadIndividuo, NumIndividuos)>
+            <!ELEMENT Consumidor Especie #PCDATA #REQUIRED>
+            <!ATTLIST Consumidor Especie (NMTOKEN)>
+            <!ELEMENT Consumidor CantidadIndividuo #PCDATA #REQUIRED>
+            <!ELEMENT Consumidor NumIndividuos #PCDATA #REQUIRED>

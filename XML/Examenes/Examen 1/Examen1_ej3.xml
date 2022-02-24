@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE habitat SYSTEM "ejercicio3.dtd">
+
+<habitat>
+    <caracteristicas></caracteristicas>
+    <turnos>
+        <horario></horario>
+        <empleados>
+            <limpiador identificador=""></limpiador>
+            <cuidador identificador=""></cuidador>
+        </empleados>
+    </turnos>
+    <zonas>
+        <zona>
+            <tamaño></tamaño>
+            <individuo>
+                <especie identificador=""></especie>
+                <edad></edad>
+                <sexo></sexo>
+            </individuo>
+        </zona>
+    </zonas>
+</habitat>
