@@ -1,0 +1,11 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<usuario
+    xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xml"
+    xsi:noNamespaceSchemaLocation="Dia6.xsd"
+    >
+    <nombre></nombre>
+    <precio></precio>
+    <numero></numero>
+    <coche></coche>
+</usuario>

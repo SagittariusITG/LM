@@ -1,0 +1,36 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xsd">
+    <xs:element name="usuario" type="Tusuario"/>
+    <xs:complexType name="Tusuario">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"></xs:element>
+            <xs:element name="precio" type="Tprecio"></xs:element>
+            <xs:element name="numero" type="Tnumero"></xs:element>
+            <xs:element name="coche" type="Tcoche"></xs:element>
+        <xs:secuence>
+    </xs:complexType>
+    <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string">
+            <xs:length value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tprecio">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="6"/>
+            <xs:maxInclusive value="23,99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tnumero">
+        <xs:restriction base="xs:integer"/>
+            <xs:maxInclusive value="999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tcoche">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="diesel"/>
+            <xs:enumeration value="gasoil"/>
+            <xs:enumeration value="gasolina"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
