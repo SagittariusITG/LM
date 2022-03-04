@@ -3,9 +3,59 @@
 <xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xsd">
     <xs:element name="usuario" type="Tusuario"/>
     <xs:complexType name="Tusuario">
-        <xs:element name="nombre" type="xs:string"></xs:element>
-        <xs:element name="apellido" type="xs:string"></xs:element>
-        <xs:element name="edad" type="xs:integer"></xs:element>
-        <xs:element name="contrasenia" type="xs:string"></xs:element>
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"></xs:element>
+            <xs:element name="apellido" type="Tapellido"></xs:element>
+            <xs:element name="edad" type="Tedad"></xs:element>
+            <xs:element name="contrasenia" type="Tcontrasenia"></xs:element>
+            <xs:element name="color" type="Tcolor"></xs:element>
+            <xs:element name="letra" type="Tletra"></xs:element>
+        <xs:secuence>
     </xs:complexType>
+    <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="Tapellido">
+        <xs:restriction base="xs:string">
+            <xs:whitespace value="perserve">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tedad">
+        <xs:restriction base="xs:integer"/>
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tcontrasenia">
+        <xs:restriction base="xs:string">
+            <xs:length value="6">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tcolor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="azul"/>
+            <xs:enumeration value="verde"/>
+            <xs:enumeration value="amarillo"/>
+            <xs:enumeration value="rojo"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tletra">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]">
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
+
+<!-- 
+    Patrones:
+
+[a-z] -> Entre a y z.
+[A-Z] -> Entre A y Z.
+[0-9999][A-Z][A-Z][A-Z]
+[A-D] = [ABCD] = [AB-D] = [A|B|C|D] -> Por ejemplo para un tipo test
+[A-CF-K] -> entre A y C y F-K.
+. -> Cualquier caracter.
+\d -> Cualquier dígito.
+\D -> Cualquier no dígito.
+
+-->
