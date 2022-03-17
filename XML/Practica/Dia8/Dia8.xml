@@ -1,0 +1,20 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<datos xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Dia8/Dia8.xml" xsi:noNamespace>
+
+<datos>
+    <persona numero="1">
+        <nombre>Celia</nombre>
+        <edad>26</edad>
+        <ciudad>Granada</ciudad>
+    </persona>
+    <persona numero="2">
+        <nombre>Ismael</nombre>
+        <edad>23</edad>
+        <ciudad>Granada</ciudad>
+    </persona>
+    <persona numero="3">
+        <nombre>Soto</nombre>
+        <edad>24</edad>
+        <ciudad>Granada</ciudad>
+    </persona>
+</datos>

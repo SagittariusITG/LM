@@ -1,0 +1,19 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<aeropuerto xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Dia9/Dia9.xml" xsi:noNamespace>
+
+<aeropuerto>
+    <vuelo codigo="V22" estado="R">
+        <diario>SI</diario>
+        <origen>NewY</origen>
+        <destino>Chicago</destino>
+        <h_salida>9:30</h_salida>
+        <h_llegada>11:30</h_llegada>
+    </vuelo>
+    <vuelo codigo="V23" estado="C">
+        <diario>NO</diario>
+        <origen>NewY</origen>
+        <destino>Miami</destino>
+        <h_salida>10:15</h_salida>
+        <h_llegada>11:15</h_llegada>
+    </vuelo>
+</aeropuerto>

@@ -1,0 +1,45 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia9/Dia9.xsd">
+    <xs:element name="aeropuerto" type="Taeropuerto"/>
+    <xs:complexType name="Taeropuerto">
+        <xs:secuence>
+            <xs:group ref="vuelos"/>
+        <xs:secuence>
+    </xs:complexType>
+
+    <xs:group name="vuelos">
+        <xs:secuence>
+            <xs:element name="diario" type="Tdiario"></xs:element>
+            <xs:element name="origen" type="Torigen"></xs:element>
+            <xs:element name="destino" type="Tdestino"></xs:element>
+            <xs:element name="h_salida" type="Tsalida"></xs:element>
+            <xs:element name="h_llegada" type="Tllegada"></xs:element>
+        <xs:secuence>
+    </xs:group>
+
+    <xs:simpleType name="Tdiario">
+        <xs:restriction base="xs:boolean">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Torigen">
+        <xs:restriction base="xs:string">
+            <xs:length value="40" />
+            <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tdestino">
+        <xs:restriction base="xs:string">
+            <xs:length value="40" />
+            <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tsalida">
+        <xs:restriction base="xs:duration">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tllegada">
+        <xs:restriction base="xs:duration">
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

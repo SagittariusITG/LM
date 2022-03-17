@@ -1,0 +1,39 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia8/Dia8.xsd">
+    <xs:element name="datos" type="Tdatos"/>
+    <xs:complexType name="Tdatos">
+        <xs:secuence>
+            <xs:group ref="datosBasicos"/>
+            <!-- <xs:element name="nombre" type="Tnombre"></xs:element>
+            <xs:element name="edad" type="Tedad"></xs:element>
+            <xs:element name="ciudad" type="Tciudad" minOccurs="0"></xs:element> -->
+        <xs:secuence>
+    </xs:complexType>
+
+    <xs:group name="datosBasicos">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"></xs:element>
+            <xs:element name="edad" type="Tedad"></xs:element>
+            <xs:element name="ciudad" type="Tciudad" minOccurs="0"></xs:element>
+        <xs:secuence>
+    </xs:group>
+
+    <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string">
+            <xs:length value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tedad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tciudad">
+        <xs:restriction base="xs:string">
+            <xs:length value="30"/>
+            <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
