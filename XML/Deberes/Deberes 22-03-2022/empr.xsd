@@ -1,0 +1,67 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Deberes 22-03-2022/empr.xsd">
+    <xs:element name="empresa" type="Tempresa"/>
+    <xs:complexType name="Tempresa">
+        <xs:secuence>
+            <xs:group ref="datosEmpresa"/>
+            <xs:group ref="departamentos"/>
+        <xs:secuence>
+    </xs:complexType>
+
+    <xs:group name="datosEmpresa">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tdiario"></xs:element>
+            <xs:element name="nTrabajadores" type="Torigen"></xs:element>
+            <xs:element name="Sector" type="Tdestino">
+                <xs:element name="tecnologia" type="Ttecnologia"></xs:element>
+                <xs:element name="educacion" type="Teducacion"></xs:element>
+            </xs:element>
+        <xs:secuence>
+    </xs:group>
+
+    <xs:group name="departamentos">
+        <xs:secuence>
+            <xs:element name="departamento" type="Tdepartamento">
+                <xs:element name="jefe" type="Tjefe">
+                    <xs:element name="nombre" type="Tnombre"></xs:element> 
+                    <xs:element name="apellidos" type="Tapellidos"></xs:element>
+                    <xs:element name="baja" type="Tbaja"></xs:element>
+                    <xs:element name="salario" type="Tsalario"></xs:element>
+                    <xs:element name="usuario" type="Tusuario"></xs:element>
+                </xs:element>
+                <xs:element name="trabajador" type="Ttrabajador">
+                    <xs:element name="nombre" type="Tnombre"></xs:element> 
+                    <xs:element name="apellidos" type="Tapellidos"></xs:element>
+                    <xs:element name="baja" type="Tbaja"></xs:element>
+                    <xs:element name="salario" type="Tsalario"></xs:element>
+                </xs:element>
+            </xs:element>
+        </xs:secuence>
+    </xs:group>
+
+    <xs:simpleType name="Tdiario">
+        <xs:restriction base="xs:boolean">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Torigen">
+        <xs:restriction base="xs:string">
+            <xs:length value="40" />
+            <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tdestino">
+        <xs:restriction base="xs:string">
+            <xs:length value="40" />
+            <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tsalida">
+        <xs:restriction base="xs:duration">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tllegada">
+        <xs:restriction base="xs:duration">
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
