@@ -3,43 +3,64 @@
 
 
 <empresa nombre="ECI">
-    <nombre>ECI</nombre>
-    <nTrabajadores>8</nTrabajadores>
-    <sector>
-        <tecnologia/>
-        <educacion/>
-    </sector>
-    
-    <departamento nombre_dep="" codigo_dep="">
-        <empleado>
-            <nombre>
-            </nombre>
-            <apellidos>
-            </apellidos>
-            <baja>
-            </baja>
-            <salario>
-            </salario>
-            <usuario>
-            </usuario>
-            <clave>
-            </clave>
-        </empleado>
-    </departamento>
-        <departamento nombre_dep="" codigo_dep="">
-        <empleado>
-            <nombre>
-            </nombre>
-            <apellidos>
-            </apellidos>
-            <baja>
-            </baja>
-            <salario>
-            </salario>
-            <usuario>
-            </usuario>
-            <clave>
-            </clave>
-        </empleado>
-    </departamento>
+
+    <datosEmpresa>
+        <nombre>ECI</nombre>
+        <nTrabajadores>8</nTrabajadores>
+        <sector>
+            <tecnologia/>
+            <educacion/>
+        </sector>
+    </datosEmpresa>
+
+    <departamentos>
+        <departamento nombre="administracion" codigoDep="ADMIN">
+
+            <jefe>
+                <nombre>Ana</nombre>
+                <apellidos>Peña</apellidos>
+                <baja/>
+                <salario>6000</salario>
+                <usuario nUsuario="anapea" clave="46322jken2"></usuario>
+            </jefe>
+            
+            <trabajador>
+                <nombre>Jose</nombre>
+                <apellidos>Lopez</apellidos>
+                <salario>2000</salario>
+            </trabajador>
+
+            <trabajador>
+                <nombre>Luis</nombre>
+                <apellidos>Nuñez</apellidos>
+                <salario>1800</salario>
+            </trabajador>
+
+            <trabajador>
+                <nombre>Martín</nombre>
+                <apellidos>Martín</apellidos>
+                <baja/>
+                <salario>1800</salario>
+            </trabajador>
+
+        </departamento>
+
+        <departamento nombre="informatica" codigoDep="INFOR">
+        
+            <jefe>
+                <nombre>Lucas</nombre>
+                <apellidos>Sorda</apellidos>
+                <salario>6500</salario>
+                <usuario nUsuario="lucsor" clave="84iejd98d3"></usuario>
+            </jefe>
+            
+            <trabajador>
+                <nombre>Helena</nombre>
+                <apellidos>Hernandez</apellidos>
+                <salario>4500</salario>
+            </trabajador>
+
+        </departamento>
+    </departamentos>
+
 </empresa>
