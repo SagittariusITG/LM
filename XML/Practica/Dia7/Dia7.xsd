@@ -1,6 +1,6 @@
 <?xml  version="1.0" encoding="UTF-8" ?>
 
-<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia6/Dia6.xsd">
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Dia7/Dia7.xsd">
     <xs:element name="usuario" type="Tusuario"/>
     <xs:complexType name="Tusuario">
         <xs:secuence>

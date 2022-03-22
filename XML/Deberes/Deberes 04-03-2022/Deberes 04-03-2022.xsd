@@ -1,0 +1,24 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Deberes/Deberes 04-03-2022/Deberes 04-03-2022.xsd">
+    <xs:element name="usuario" type="Tusuario"/>
+    <xs:complexType name="Tusuario">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"></xs:element>
+            <xs:element name="precio" type="Tprecio"></xs:element>
+            <xs:element name="numero" type="Tnumero"></xs:element>
+            <xs:element name="coche" type="Tcoche"></xs:element>
+        <xs:secuence>
+    </xs:complexType>
+
+    <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\a]{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\a]{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

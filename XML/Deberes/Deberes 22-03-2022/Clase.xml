@@ -1,0 +1,45 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<empresa xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Deberes 22-03-2022/Clase.xml" xsi:noNamespaceSchemaLocation="empr.xsd">
+
+
+<empresa nombre="ECI">
+    <nombre>ECI</nombre>
+    <nTrabajadores>8</nTrabajadores>
+    <sector>
+        <tecnologia/>
+        <educacion/>
+    </sector>
+    
+    <departamento nombre_dep="" codigo_dep="">
+        <empleado>
+            <nombre>
+            </nombre>
+            <apellidos>
+            </apellidos>
+            <baja>
+            </baja>
+            <salario>
+            </salario>
+            <usuario>
+            </usuario>
+            <clave>
+            </clave>
+        </empleado>
+    </departamento>
+        <departamento nombre_dep="" codigo_dep="">
+        <empleado>
+            <nombre>
+            </nombre>
+            <apellidos>
+            </apellidos>
+            <baja>
+            </baja>
+            <salario>
+            </salario>
+            <usuario>
+            </usuario>
+            <clave>
+            </clave>
+        </empleado>
+    </departamento>
+</empresa>
