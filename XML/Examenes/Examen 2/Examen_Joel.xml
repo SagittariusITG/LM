@@ -1,0 +1,36 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<factura xmlns:xsi="~/Documents/LMSG/GIT-LM/XML/Practica/Examenes/Examen 2/Examen_Joel.xml" xsi:noNamespaceSchemaLocation="Examen_Joel.xsd">
+
+<factura>
+    <numero_factura>2</numero_factura>
+    <fecha>23/03/2022</fecha>
+    <datos_emisor>
+        <nombre>Libreria</nombre>
+        <cif>12345678A</cif>
+        <Telefono>666111222</Telefono>
+    </datos_emisor>
+    <datos_cliente>
+        <nombre>Biblioteca</nombre>
+        <cif>98765432B</cif>
+        <Telefono>666333444</Telefono>
+    </datos_cliente>
+
+    <detalles_factura>
+        <articulo codigo_articulo="ART226">
+            <tipo>Libro</tipo>
+            <descripcion>El color de la magia - Terry Pratchet</descripcion>
+            <cantidad>2</cantidad>
+            <PvP>12.95</PvP>
+        </articulo>
+
+        <articulo codigo_articulo="ART925">
+            <tipo>Comic</tipo>
+            <descripcion>Batman la broma asesina - Alan Moore</descripcion>
+            <cantidad>1</cantidad>
+            <oferta/>
+            <PvP>17.90</PvP>
+        </articulo>
+    </detalles_factura>
+
+    <importe>30.85</importe>
+</factura>

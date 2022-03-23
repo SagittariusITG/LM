@@ -1,0 +1,98 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="~/Documents/LMSG/GIT-LM/XML/Practica/Examenes/Examen 2/Examen_Joel.xsd">
+    <xs:element name="factura" type="Tfactura"/>
+    <xs:complexType name="Tfactura">
+        <xs:secuence>
+            <xs:element name="numero_factura" type="Tfactura" use="required"/>
+            <xs:element name="fecha" type="Tfecha" use="required"/>
+            <xs:group ref="datos_emisor" use="required"/>
+            <xs:group ref="datos_cliente" use="required"/>
+            <xs:group ref="detalles_factura" use="required"/>
+            <xs:element name="importe" type="Tprecio" use="required"/>
+        </xs:secuence>
+    </xs:complexType>
+
+    <xs:group ref="datos_emisor">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"/>
+            <xs:element name="cif" type="Tcif"/>
+            <xs:element name="Telefono" type="Ttelefono"/>
+        </xs:secuence>
+    </xs:group>
+
+    <xs:group ref="datos_cliente">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"/>
+            <xs:element name="cif" type="Tcif"/>
+            <xs:element name="Telefono" type="Ttelefono_cliente"/>
+        </xs:secuence>
+    </xs:group>
+
+    <xs:group ref="detalles_factura">
+        <xs:secuence>
+            <xs:group ref="articulo"/>
+        </xs:secuence>
+    </xs:group>
+
+    <xs:group ref="articulo">
+        <xs:secuence>
+            <xs:element name="tipo" type="Ttipo"/>
+            <xs:element name="descripcion" type="Ttexto"/>
+            <xs:element name="cantidad" type="Tcantidad"/>
+            <xs:element name="Oferta" type="Toferta"/>
+            <xs:element name="PvP" type="Tprecio"/>
+        </xs:secuence>
+    </xs:group>
+    
+
+    <xs:simpleType name="Tfactura">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Toferta">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Ttipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Libro"/>
+            <xs:enumeration value="Comic"/>
+            <xs:enumeration value="Manga"/>
+            <xs:enumeration value="Manual"/>
+            <xs:enumeration value="Audiovisual"/>
+            <xs:enumeration value="Otros"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tcif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]-\d{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Ttexto">
+        <xs:restriction base="xs:string">
+        <xs:minLength value="5"/>
+        <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="Ttelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tprecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:maxInclusive value="999"/>
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
